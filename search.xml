@@ -1,10 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>linux常用软件</title>
+    <url>/2019/12/21/linux%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6/</url>
+    <content><![CDATA[<h1 id="Manjaro常用软件"><a href="#Manjaro常用软件" class="headerlink" title="Manjaro常用软件"></a>Manjaro常用软件</h1><h2 id="１-系统工具"><a href="#１-系统工具" class="headerlink" title="１.系统工具"></a>１.系统工具</h2><ul>
+<li><p><strong>截图工具  Flameshot</strong></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">pacman -S flameshot</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<ul>
+<li><p><strong>浏览器  google-chrome</strong></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">pacman -S  google-chrome</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>分区工具 <strong>Gparted</strong></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">pacman -S  gparted</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>shell工具 <strong>zsh</strong></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">pacman -S oh-my-zsh</span><br><span class="line"></span><br><span class="line">curl sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"</span><br></pre></td></tr></table></figure>
+
+<p>替换zsh的配置文件为oh-my-zsh</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc</span><br></pre></td></tr></table></figure>
+</li>
+<li><h4 id="安装搜狗输入法"><a href="#安装搜狗输入法" class="headerlink" title="安装搜狗输入法"></a>安装搜狗输入法</h4><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo pacman -S fcitx-im    #默认全部安装</span><br><span class="line">sudo pacman -S fcitx-configtool</span><br><span class="line">sudo pacman -S fcitx-sogoupinyin</span><br></pre></td></tr></table></figure>
+
+<p>新建~/.xprofile文件，加入如下内容</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">export GTK_IM_MODULE=fcitx</span><br><span class="line">export QT_IM_MODULE=fcitx</span><br><span class="line">export XMODIFIERS="@im=fcitx"</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+</li>
+</ul>
+<h2 id="２-开发工具"><a href="#２-开发工具" class="headerlink" title="２.开发工具"></a>２.开发工具</h2><ul>
+<li><p><strong>java</strong></p>
+<p>查看jdk状态</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo archlinux-java status</span><br></pre></td></tr></table></figure>
+
+<p>设置默认jdk</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo archlinux-java set java-12-jdk</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>maven</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">pacman -S maven</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>idea</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">yay -S intellij-idea-ultimate-edition</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>docker</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"> </span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<h2 id="3-常用命令"><a href="#3-常用命令" class="headerlink" title="3.常用命令"></a>3.常用命令</h2><ul>
+<li><h4 id="改为国内源"><a href="#改为国内源" class="headerlink" title="改为国内源"></a>改为国内源</h4><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo pacman-mirrors -GB testing -c China</span><br></pre></td></tr></table></figure>
+
+<p>更新系统</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo pacman -Syu</span><br></pre></td></tr></table></figure>
+</li>
+<li><h4 id="修改Home下的目录为英文"><a href="#修改Home下的目录为英文" class="headerlink" title="修改Home下的目录为英文"></a>修改Home下的目录为英文</h4><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">vim ~/.config/user-dirs.dirs</span><br><span class="line"></span><br><span class="line">XDG_DESKTOP_DIR="$HOME/Desktop"</span><br><span class="line">XDG_DOWNLOAD_DIR="$HOME/Download"</span><br><span class="line">XDG_TEMPLATES_DIR="$HOME/Templates"</span><br><span class="line">XDG_PUBLICSHARE_DIR="$HOME/Public"</span><br><span class="line">XDG_DOCUMENTS_DIR="$HOME/Documents"</span><br><span class="line">XDG_MUSIC_DIR="$HOME/Music"</span><br><span class="line">XDG_PICTURES_DIR="$HOME/Pictures"</span><br><span class="line">XDG_VIDEOS_DIR="$HOME/Videos"</span><br></pre></td></tr></table></figure>
+
+<p>将Home目录下的中文目录名改为对应的中文名；</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd ~</span><br><span class="line">mv 公共 Public</span><br><span class="line">mv 模板 Templates</span><br><span class="line">mv 视频 Videos</span><br><span class="line">mv 图片 Pictures</span><br><span class="line">mv 文档 Documents</span><br><span class="line">mv 下载 Download</span><br><span class="line">mv 音乐 Music</span><br><span class="line">mv 桌面 Desktop</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>yay</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo pacman -S yay</span><br></pre></td></tr></table></figure>
+
+<p>yay 的常用命令</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">yay -S package # 从 AUR 安装软件包</span><br><span class="line">yay -Rns package # 删除包</span><br><span class="line">yay -Syu # 升级所有已安装的包</span><br><span class="line">yay -Ps # 打印系统统计信息</span><br><span class="line">yay -Qi package # 检查安装的版本</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<h2 id="4-外观美化"><a href="#4-外观美化" class="headerlink" title="4.外观美化"></a>4.外观美化</h2><ul>
+<li><p>dock <strong>latte</strong></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">pacman -S latte</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="5-其他常用软件"><a href="#5-其他常用软件" class="headerlink" title="5.其他常用软件"></a>5.其他常用软件</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> deepin 系的软件</span></span><br><span class="line">sudo pacman -S deepin-picker # 深度取色器</span><br><span class="line">sudo pacman -S deepin-screen-recorder # 录屏软件，可以录制 Gif 或者 MP4 格式</span><br><span class="line">sudo pacman -S deepin-screenshot # 深度截图</span><br><span class="line">sudo pacman -S deepin-system-monitor # 系统状态监控</span><br><span class="line">yay -s deepin-wine-wechat</span><br><span class="line">yay -S deepin-wine-tim</span><br><span class="line">yay -S deepin-wine-baidupan</span><br><span class="line">yay -S deepin.com.thunderspeed</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 开发软件</span></span><br><span class="line">sudo pacman -S jdk8-openjdk</span><br><span class="line">sudo pacman -S make</span><br><span class="line">sudo pacman -S cmake</span><br><span class="line">sudo pacman -S clang</span><br><span class="line">sudo pacman -S nodejs</span><br><span class="line">sudo pacman -S npm</span><br><span class="line">sudo pacman -S goland</span><br><span class="line">sudo pacman -S vim</span><br><span class="line">sudo pacman -S maven</span><br><span class="line">sudo pacman -S pycharm-professional # Python IDE</span><br><span class="line">sudo pacman -S intellij-idea-ultimate-edition # JAVA IDE</span><br><span class="line">sudo pacman -S goland # Go IDE</span><br><span class="line">sudo pacman -S visual-studio-code-bin # vscode</span><br><span class="line">sudo pacman -S qtcreator # 一款QT开发软件</span><br><span class="line">sudo pacman -S postman-bin</span><br><span class="line">sudo pacman -S insomnia # REST模拟工具</span><br><span class="line">sudo pacman -S gitkraken # GIT管理工具</span><br><span class="line">sudo pacman -S wireshark-qt # 抓包</span><br><span class="line">sudo pacman -S zeal</span><br><span class="line">sudo pacman -S gitkraken # Git 管理工具</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 办公软件</span></span><br><span class="line">sudo pacman -S google-chrome</span><br><span class="line">sudo pacman -S foxitreader # pdf 阅读</span><br><span class="line">sudo pacman -S bookworm # 电子书阅读</span><br><span class="line">sudo pacman -S unrar unzip p7zip</span><br><span class="line">sudo pacman -S goldendict # 翻译、取词</span><br><span class="line">sudo pacman -S wps-office</span><br><span class="line">yay -S typora # markdown 编辑</span><br><span class="line">yay -S electron-ssr # 缺少我需要的加密算法</span><br><span class="line">yay -S xmind</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 设计</span></span><br><span class="line">sudo pacman -S pencil # 免费开源界面原型图绘制工具</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 娱乐软件</span></span><br><span class="line">sudo pacman -S netease-cloud-music</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 下载软件</span></span><br><span class="line">sudo pacman -S aria2</span><br><span class="line">sudo pacman -S filezilla  # FTP/SFTP</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 图形</span></span><br><span class="line">sudo pacman -S gimp # 修图</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 系统工具</span></span><br><span class="line">sudo pacman -S albert #类似Mac Spotlight，另外一款https://cerebroapp.com/</span><br><span class="line">yay -S copyq #  剪贴板工具，类似 Windows 上的 Ditto</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 终端</span></span><br><span class="line">sudo pacman -S screenfetch # 终端打印出你的系统信息，screenfetch -A 'Arch Linux'</span><br><span class="line">sudo pacman -S htop</span><br><span class="line">sudo pacman -S bat</span><br><span class="line">sudo pacman -S yakuake # 堪称 KDE 下的终端神器，KDE 已经自带，F12 可以唤醒</span><br><span class="line">sudo pacman -S net-tools # 这样可以使用 ifconfig 和 netstat</span><br><span class="line">yay -S tldr</span><br><span class="line">yay -S tig # 命令行下的 git 历史查看工具</span><br><span class="line">yay -S tree</span><br><span class="line">yay -S ncdu # 命令行下的磁盘分析器，支持Vim操作</span><br><span class="line">yay -S mosh # 一款速度更快的 ssh 工具，网络不稳定时使用有奇效</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>软件</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>linux备份命令</title>
     <url>/2019/12/21/linux%E5%A4%87%E4%BB%BD%E5%91%BD%E4%BB%A4/</url>
     <content><![CDATA[<h1 id="Linux系统备份命令"><a href="#Linux系统备份命令" class="headerlink" title="Linux系统备份命令"></a>Linux系统备份命令</h1><h2 id="一-tar备份"><a href="#一-tar备份" class="headerlink" title="一.tar备份"></a>一.tar备份</h2><h3 id="1-备份"><a href="#1-备份" class="headerlink" title="1.备份"></a><strong>1.备份</strong></h3><p>用root权限，运行完整的备份命令：</p>
-<p>接着，让我们稍微解释一下：<br>* ‘-cvpzf’是我们给tar加的选项。<br>* /media/disk/backup.tgz是压缩包的存放路径与名称。<br>* ‘/‘是我们想要备份的目录，我们想要备份根目录下的所有的东西，所以使用 / 作为根目录。<br>* ‘–exclude’就是我们要剔除的目录了。<br>有些目录是不需要备份的。如：/proc目录、 /tmp目录、/sys目录，里面都是临时文件，备份容易出错，/home目录备份容易引起”tar: 由于前面延迟的错误而退出”的提示。 同时确保你没有任何东西挂载在/mnt、/media目录内，否则，会把被挂载的分区也备份在内，备份文件会很大。还要注意不要把备份文件本身也备份进去了，也需要剔除。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">tar -cvpzf /media/disk/backup.tgz / --exclude=/proc --exclude=/lost+found --exclude=/tmp --exclude=/sys --exclude=/media --exclude=/home</span><br></pre></td></tr></table></figure>
+
+<p>接着，让我们稍微解释一下：<br><code>-cvpzf</code>是我们给tar加的选项。</p>
+<p><code>/media/disk/backup.tgz</code>是压缩包的存放路径与名称。<br>* <code>‘/&#39;</code>是我们想要备份的目录，我们想要备份根目录下的所有的东西，所以使用 / 作为根目录。<br>*‘<code>--exclude&#39;</code>就是我们要剔除的目录了。<br>有些目录是不需要备份的。如：/proc目录、 /tmp目录、/sys目录，里面都是临时文件，备份容易出错，/home目录备份容易引起”tar: 由于前面延迟的错误而退出”的提示。 同时确保你没有任何东西挂载在/mnt、/media目录内，否则，会把被挂载的分区也备份在内，备份文件会很大。还要注意不要把备份文件本身也备份进去了，也需要剔除。</p>
 <p>备份结束以后，在你的/media/disk目录下有一个backup.tgz ，这就是你的备份文件。</p>
 <h3 id="2-恢复备份"><a href="#2-恢复备份" class="headerlink" title="2.恢复备份"></a><strong>2.恢复备份</strong></h3><p>慎用，将会把你目标路径下的所有同名文件替换成压缩文档里的文件，目标路径下多出的目录与文件并不会必删除。</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo tar -xvpzf backup.tgz -C /</span><br></pre></td></tr></table></figure>
@@ -35,23 +132,5 @@
         <tag>linux</tag>
         <tag>shell</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2019/12/21/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-]]></content>
   </entry>
 </search>
