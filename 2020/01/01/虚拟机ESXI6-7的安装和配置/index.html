@@ -46,17 +46,21 @@
   };
 </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="categories">
-<meta property="og:url" content="https://xievcc.github.io/categories/index.html">
+  <meta name="description" content="由于看了油管上很多UP主的视频安利，看了很多的视频，自己也手痒的入了一个软路由配置如下  CPU 3215U 内存 DDR3 4G笔记本低压 8G固态硬盘 4个千兆网口  为什么不买j1900或者还是D525其它一些比较不好的U呢，主要还是这个U支持网卡的直通，不想只是装单一的路由系统，说白的其实这对于我这50M的小水管没有什么用，就是为了折腾。目前主流的软路由的系统主要有:  openwrt l">
+<meta property="og:type" content="article">
+<meta property="og:title" content="虚拟机ESXI6.7的安装和配置">
+<meta property="og:url" content="https://xievcc.github.io/2020/01/01/%E8%99%9A%E6%8B%9F%E6%9C%BAESXI6-7%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/index.html">
 <meta property="og:site_name" content="无忌neinx">
+<meta property="og:description" content="由于看了油管上很多UP主的视频安利，看了很多的视频，自己也手痒的入了一个软路由配置如下  CPU 3215U 内存 DDR3 4G笔记本低压 8G固态硬盘 4个千兆网口  为什么不买j1900或者还是D525其它一些比较不好的U呢，主要还是这个U支持网卡的直通，不想只是装单一的路由系统，说白的其实这对于我这50M的小水管没有什么用，就是为了折腾。目前主流的软路由的系统主要有:  openwrt l">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2019-12-21T07:32:41.000Z">
-<meta property="article:modified_time" content="2019-12-21T08:39:51.641Z">
+<meta property="article:published_time" content="2020-01-01T14:31:19.000Z">
+<meta property="article:modified_time" content="2020-01-01T14:32:31.142Z">
 <meta property="article:author" content="next">
+<meta property="article:tag" content="EXSI">
+<meta property="article:tag" content="虚拟机s">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://xievcc.github.io/categories/">
+<link rel="canonical" href="https://xievcc.github.io/2020/01/01/%E8%99%9A%E6%8B%9F%E6%9C%BAESXI6-7%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/">
 
 
 <script id="page-configurations">
@@ -64,12 +68,11 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: false
+    isPost: true
   };
 </script>
 
-  <title>categories | 无忌neinx
-  </title>
+  <title>虚拟机ESXI6.7的安装和配置 | 无忌neinx</title>
   
 
 
@@ -205,52 +208,127 @@
       <div class="main-inner">
         <div class="content-wrap">
           
-  
-  
 
           <div class="content">
             
 
   <div class="posts-expand">
-    
-    
-    
-    <div class="post-block" lang="zh-CN">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://xievcc.github.io/2020/01/01/%E8%99%9A%E6%8B%9F%E6%9C%BAESXI6-7%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="next">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="无忌neinx">
+    </span>
       <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          虚拟机ESXI6.7的安装和配置
+        </h1>
 
-<h1 class="post-title" itemprop="name headline">categories
-</h1>
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
 
-<div class="post-meta">
+              <time title="创建时间：2020-01-01 22:31:19 / 修改时间：22:32:31" itemprop="dateCreated datePublished" datetime="2020-01-01T22:31:19+08:00">2020-01-01</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index">
+                    <span itemprop="name">技术</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>由于看了油管上很多UP主的视频安利，看了很多的视频，自己也手痒的入了一个软路由配置如下</p>
+<ul>
+<li>CPU 3215U</li>
+<li>内存 DDR3 4G笔记本低压</li>
+<li>8G固态硬盘</li>
+<li>4个千兆网口</li>
+</ul>
+<p>为什么不买j1900或者还是D525其它一些比较不好的U呢，主要还是这个U支持网卡的直通，不想只是装单一的路由系统，说白的其实这对于我这50M的小水管没有什么用，就是为了折腾。目前主流的软路由的系统主要有:</p>
+<ul>
+<li>openwrt lean开源版 自己可以编译</li>
+<li>Koolshare 的LEDE 其余openwrt</li>
+<li>爱快软路由系统</li>
+<li>ROS路由系统</li>
+</ul>
+<p>为了玩转这一些系统如果一个个的刷入U盘实体安装就显得太过麻烦，这时就要先安装虚拟机然后再分别的虚拟这些系统，这一来就很好的管理，安装。能用的虚拟系统主要有两个</p>
+<ul>
+<li>PVE <em>没有使用过，没有对硬件的要求那么高</em></li>
+<li>ESXI <em>软路由玩家的常用选择，6.5以上需要4G的内存，网上的教程较多</em></li>
+</ul>
+<p>对于我个人而言主要还是使用ESXI6.7系统，本篇文章主要还是记录下安装时的一些过程</p>
+<h2 id="从官方网站下载ESXI6-7"><a href="#从官方网站下载ESXI6-7" class="headerlink" title="从官方网站下载ESXI6.7"></a>从官方网站下载ESXI6.7</h2><ul>
+<li>进入官方网站注册账号：</li>
+</ul>
+<blockquote>
+<p><a href="https://my.vmware.com/cn/web/vmware/login" target="_blank" rel="noopener">https://my.vmware.com/cn/web/vmware/login</a></p>
+</blockquote>
+<ul>
+<li>选择vSphere,进入到下载的页面</li>
+<li>把ISO镜像写入U盘，选择U盘启动把，把ESXI系统安装到软路由</li>
+<li>机器的BIOS设置为来电启动</li>
+<li>配置好ESXI的root密码，打开ssh，并设置好网络</li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/EXSI/" rel="tag"># EXSI</a>
+              <a href="/tags/%E8%99%9A%E6%8B%9F%E6%9C%BAs/" rel="tag"># 虚拟机s</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/01/01/U%E7%9B%98%E5%AE%89%E8%A3%85windows%E5%92%8Clinux/" rel="prev" title="U盘安装windows和linux">
+      <i class="fa fa-chevron-left"></i> U盘安装windows和linux
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
   
 
-</div>
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
-          <div class="category-all-page">
-            <div class="category-all-title">
-              目前共计 1 个分类
-            </div>
-            <div class="category-all">
-              <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a><span class="category-list-count">6</span></li></ul>
-            </div>
-          </div>
-        
-      </div>
-      
-      
-      
-    </div>
-    
-
-    
-    
-    
   </div>
 
 
@@ -302,6 +380,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#从官方网站下载ESXI6-7"><span class="nav-number">1.</span> <span class="nav-text">从官方网站下载ESXI6.7</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
