@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://xievcc.github.io/"/>
-  <updated>2020-01-01T14:32:31.142Z</updated>
+  <updated>2020-01-01T14:40:30.813Z</updated>
   <id>https://xievcc.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>vue中防止重复点击</title>
+    <link href="https://xievcc.github.io/2020/01/01/vue%E4%B8%AD%E9%98%B2%E6%AD%A2%E9%87%8D%E5%A4%8D%E7%82%B9%E5%87%BB/"/>
+    <id>https://xievcc.github.io/2020/01/01/vue%E4%B8%AD%E9%98%B2%E6%AD%A2%E9%87%8D%E5%A4%8D%E7%82%B9%E5%87%BB/</id>
+    <published>2020-01-01T14:35:47.000Z</published>
+    <updated>2020-01-01T14:40:30.813Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="vue中防止重复点击方法"><a href="#vue中防止重复点击方法" class="headerlink" title="vue中防止重复点击方法"></a>vue中防止重复点击方法</h2><h3 id="1-防止狂击"><a href="#1-防止狂击" class="headerlink" title="1.防止狂击"></a>1.防止狂击</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"> <span class="keyword">var</span> app = <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">    el:<span class="string">"#app"</span>,</span><br><span class="line">    data:&#123;</span><br><span class="line">    &#125;,</span><br><span class="line">    methods:&#123;</span><br><span class="line">        login()&#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.timer) &#123;</span><br><span class="line">            clearTimeout(<span class="keyword">this</span>.timer);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">this</span>.timer = setTimeout(<span class="function"><span class="params">()</span>=&gt;</span>&#123;</span><br><span class="line">            axios.get(<span class="string">"/brand/login/"</span>+id+<span class="string">".do"</span>).then(<span class="function">(<span class="params">result</span>)=&gt;</span>&#123;</span><br><span class="line">                <span class="keyword">this</span>.brand = result.data;</span><br><span class="line">            &#125;)</span><br><span class="line">        &#125;,<span class="number">200</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><p>有效的阻止在一定的时间内用户的连续点击</p><h3 id="2-防止重复点击"><a href="#2-防止重复点击" class="headerlink" title="2.防止重复点击"></a>2.防止重复点击</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> app = <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">        el:<span class="string">"#app"</span>,</span><br><span class="line">        data:&#123;</span><br><span class="line">        flag:<span class="literal">false</span></span><br><span class="line">        &#125;,</span><br><span class="line">        methods:&#123;</span><br><span class="line">            login()&#123;</span><br><span class="line">              <span class="keyword">if</span> (<span class="keyword">this</span>.flag) &#123;</span><br><span class="line">                retrun;</span><br><span class="line">             &#125;</span><br><span class="line">            <span class="keyword">this</span>.flag = <span class="literal">true</span>;</span><br><span class="line">            axios.get(<span class="string">"/brand/login/"</span>+id+<span class="string">".do"</span>).then(<span class="function">(<span class="params">result</span>)=&gt;</span>&#123;</span><br><span class="line">                    <span class="keyword">this</span>.brand = result.data;</span><br><span class="line">                &#125;)</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;vue中防止重复点击方法&quot;&gt;&lt;a href=&quot;#vue中防止重复点击方法&quot; class=&quot;headerlink&quot; title=&quot;vue中防止重复点击方法&quot;&gt;&lt;/a&gt;vue中防止重复点击方法&lt;/h2&gt;&lt;h3 id=&quot;1-防止狂击&quot;&gt;&lt;a href=&quot;#1-防止狂击&quot;
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="https://xievcc.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="vue" scheme="https://xievcc.github.io/tags/vue/"/>
+    
+  </entry>
   
   <entry>
     <title>虚拟机ESXI6.7的安装和配置</title>

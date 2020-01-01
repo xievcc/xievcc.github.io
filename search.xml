@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>vue中防止重复点击</title>
+    <url>/2020/01/01/vue%E4%B8%AD%E9%98%B2%E6%AD%A2%E9%87%8D%E5%A4%8D%E7%82%B9%E5%87%BB/</url>
+    <content><![CDATA[<h2 id="vue中防止重复点击方法"><a href="#vue中防止重复点击方法" class="headerlink" title="vue中防止重复点击方法"></a>vue中防止重复点击方法</h2><h3 id="1-防止狂击"><a href="#1-防止狂击" class="headerlink" title="1.防止狂击"></a>1.防止狂击</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"> <span class="keyword">var</span> app = <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">    el:<span class="string">"#app"</span>,</span><br><span class="line">    data:&#123;</span><br><span class="line">    &#125;,</span><br><span class="line">    methods:&#123;</span><br><span class="line">        login()&#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.timer) &#123;</span><br><span class="line">            clearTimeout(<span class="keyword">this</span>.timer);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">this</span>.timer = setTimeout(<span class="function"><span class="params">()</span>=&gt;</span>&#123;</span><br><span class="line">            axios.get(<span class="string">"/brand/login/"</span>+id+<span class="string">".do"</span>).then(<span class="function">(<span class="params">result</span>)=&gt;</span>&#123;</span><br><span class="line">                <span class="keyword">this</span>.brand = result.data;</span><br><span class="line">            &#125;)</span><br><span class="line">        &#125;,<span class="number">200</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>有效的阻止在一定的时间内用户的连续点击</p>
+<h3 id="2-防止重复点击"><a href="#2-防止重复点击" class="headerlink" title="2.防止重复点击"></a>2.防止重复点击</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> app = <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">        el:<span class="string">"#app"</span>,</span><br><span class="line">        data:&#123;</span><br><span class="line">        flag:<span class="literal">false</span></span><br><span class="line">        &#125;,</span><br><span class="line">        methods:&#123;</span><br><span class="line">            login()&#123;</span><br><span class="line">              <span class="keyword">if</span> (<span class="keyword">this</span>.flag) &#123;</span><br><span class="line">                retrun;</span><br><span class="line">             &#125;</span><br><span class="line">            <span class="keyword">this</span>.flag = <span class="literal">true</span>;</span><br><span class="line">            axios.get(<span class="string">"/brand/login/"</span>+id+<span class="string">".do"</span>).then(<span class="function">(<span class="params">result</span>)=&gt;</span>&#123;</span><br><span class="line">                    <span class="keyword">this</span>.brand = result.data;</span><br><span class="line">                &#125;)</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>vue</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>虚拟机ESXI6.7的安装和配置</title>
     <url>/2020/01/01/%E8%99%9A%E6%8B%9F%E6%9C%BAESXI6-7%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/</url>
     <content><![CDATA[<p>由于看了油管上很多UP主的视频安利，看了很多的视频，自己也手痒的入了一个软路由配置如下</p>
