@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://xievcc.github.io/"/>
+  <link href="https://blog.neinx.site/"/>
   <updated>2020-01-02T12:49:36.195Z</updated>
-  <id>https://xievcc.github.io/</id>
+  <id>https://blog.neinx.site/</id>
   
   <author>
     <name>next</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>ArchLinux Java环境</title>
-    <link href="https://xievcc.github.io/2020/01/02/ArchLinux-Java%E7%8E%AF%E5%A2%83/"/>
-    <id>https://xievcc.github.io/2020/01/02/ArchLinux-Java%E7%8E%AF%E5%A2%83/</id>
+    <link href="https://blog.neinx.site/2020/01/02/ArchLinux-Java%E7%8E%AF%E5%A2%83/"/>
+    <id>https://blog.neinx.site/2020/01/02/ArchLinux-Java%E7%8E%AF%E5%A2%83/</id>
     <published>2020-01-02T12:27:10.000Z</published>
     <updated>2020-01-02T12:49:36.195Z</updated>
     
@@ -35,19 +35,19 @@
     </summary>
     
     
-      <category term="技术" scheme="https://xievcc.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://blog.neinx.site/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="java" scheme="https://xievcc.github.io/tags/java/"/>
+      <category term="java" scheme="https://blog.neinx.site/tags/java/"/>
     
-      <category term="manjaro" scheme="https://xievcc.github.io/tags/manjaro/"/>
+      <category term="manjaro" scheme="https://blog.neinx.site/tags/manjaro/"/>
     
   </entry>
   
   <entry>
     <title>vue中防止重复点击</title>
-    <link href="https://xievcc.github.io/2020/01/01/vue%E4%B8%AD%E9%98%B2%E6%AD%A2%E9%87%8D%E5%A4%8D%E7%82%B9%E5%87%BB/"/>
-    <id>https://xievcc.github.io/2020/01/01/vue%E4%B8%AD%E9%98%B2%E6%AD%A2%E9%87%8D%E5%A4%8D%E7%82%B9%E5%87%BB/</id>
+    <link href="https://blog.neinx.site/2020/01/01/vue%E4%B8%AD%E9%98%B2%E6%AD%A2%E9%87%8D%E5%A4%8D%E7%82%B9%E5%87%BB/"/>
+    <id>https://blog.neinx.site/2020/01/01/vue%E4%B8%AD%E9%98%B2%E6%AD%A2%E9%87%8D%E5%A4%8D%E7%82%B9%E5%87%BB/</id>
     <published>2020-01-01T14:35:47.000Z</published>
     <updated>2020-01-01T14:58:44.668Z</updated>
     
@@ -63,17 +63,17 @@
     </summary>
     
     
-      <category term="前端" scheme="https://xievcc.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+      <category term="前端" scheme="https://blog.neinx.site/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
-      <category term="vue" scheme="https://xievcc.github.io/tags/vue/"/>
+      <category term="vue" scheme="https://blog.neinx.site/tags/vue/"/>
     
   </entry>
   
   <entry>
     <title>虚拟机ESXI6.7的安装和配置</title>
-    <link href="https://xievcc.github.io/2020/01/01/%E8%99%9A%E6%8B%9F%E6%9C%BAESXI6-7%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/"/>
-    <id>https://xievcc.github.io/2020/01/01/%E8%99%9A%E6%8B%9F%E6%9C%BAESXI6-7%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/</id>
+    <link href="https://blog.neinx.site/2020/01/01/%E8%99%9A%E6%8B%9F%E6%9C%BAESXI6-7%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/"/>
+    <id>https://blog.neinx.site/2020/01/01/%E8%99%9A%E6%8B%9F%E6%9C%BAESXI6-7%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/</id>
     <published>2020-01-01T14:31:19.000Z</published>
     <updated>2020-01-01T14:32:31.142Z</updated>
     
@@ -96,19 +96,19 @@
     </summary>
     
     
-      <category term="技术" scheme="https://xievcc.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://blog.neinx.site/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="EXSI" scheme="https://xievcc.github.io/tags/EXSI/"/>
+      <category term="EXSI" scheme="https://blog.neinx.site/tags/EXSI/"/>
     
-      <category term="虚拟机s" scheme="https://xievcc.github.io/tags/%E8%99%9A%E6%8B%9F%E6%9C%BAs/"/>
+      <category term="虚拟机s" scheme="https://blog.neinx.site/tags/%E8%99%9A%E6%8B%9F%E6%9C%BAs/"/>
     
   </entry>
   
   <entry>
     <title>U盘安装windows和linux</title>
-    <link href="https://xievcc.github.io/2020/01/01/U%E7%9B%98%E5%AE%89%E8%A3%85windows%E5%92%8Clinux/"/>
-    <id>https://xievcc.github.io/2020/01/01/U%E7%9B%98%E5%AE%89%E8%A3%85windows%E5%92%8Clinux/</id>
+    <link href="https://blog.neinx.site/2020/01/01/U%E7%9B%98%E5%AE%89%E8%A3%85windows%E5%92%8Clinux/"/>
+    <id>https://blog.neinx.site/2020/01/01/U%E7%9B%98%E5%AE%89%E8%A3%85windows%E5%92%8Clinux/</id>
     <published>2020-01-01T14:26:15.000Z</published>
     <updated>2020-01-01T15:07:25.620Z</updated>
     
@@ -124,19 +124,19 @@
     </summary>
     
     
-      <category term="技术" scheme="https://xievcc.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://blog.neinx.site/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="系统" scheme="https://xievcc.github.io/tags/%E7%B3%BB%E7%BB%9F/"/>
+      <category term="系统" scheme="https://blog.neinx.site/tags/%E7%B3%BB%E7%BB%9F/"/>
     
-      <category term="wintogo" scheme="https://xievcc.github.io/tags/wintogo/"/>
+      <category term="wintogo" scheme="https://blog.neinx.site/tags/wintogo/"/>
     
   </entry>
   
   <entry>
     <title>黑苹果</title>
-    <link href="https://xievcc.github.io/2020/01/01/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
-    <id>https://xievcc.github.io/2020/01/01/%E9%BB%91%E8%8B%B9%E6%9E%9C/</id>
+    <link href="https://blog.neinx.site/2020/01/01/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
+    <id>https://blog.neinx.site/2020/01/01/%E9%BB%91%E8%8B%B9%E6%9E%9C/</id>
     <published>2020-01-01T14:22:49.000Z</published>
     <updated>2020-01-01T14:23:51.161Z</updated>
     
@@ -152,19 +152,19 @@
     </summary>
     
     
-      <category term="技术" scheme="https://xievcc.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://blog.neinx.site/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="mac" scheme="https://xievcc.github.io/tags/mac/"/>
+      <category term="mac" scheme="https://blog.neinx.site/tags/mac/"/>
     
-      <category term="技术" scheme="https://xievcc.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://blog.neinx.site/tags/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
   <entry>
     <title>Linux定时任务</title>
-    <link href="https://xievcc.github.io/2019/12/24/Linux%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/"/>
-    <id>https://xievcc.github.io/2019/12/24/Linux%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/</id>
+    <link href="https://blog.neinx.site/2019/12/24/Linux%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/"/>
+    <id>https://blog.neinx.site/2019/12/24/Linux%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/</id>
     <published>2019-12-24T13:56:54.000Z</published>
     <updated>2019-12-24T14:02:54.269Z</updated>
     
@@ -180,19 +180,19 @@
     </summary>
     
     
-      <category term="技术" scheme="https://xievcc.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://blog.neinx.site/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="linux" scheme="https://xievcc.github.io/tags/linux/"/>
+      <category term="linux" scheme="https://blog.neinx.site/tags/linux/"/>
     
-      <category term="cron" scheme="https://xievcc.github.io/tags/cron/"/>
+      <category term="cron" scheme="https://blog.neinx.site/tags/cron/"/>
     
   </entry>
   
   <entry>
     <title>linux常用软件</title>
-    <link href="https://xievcc.github.io/2019/12/21/linux%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6/"/>
-    <id>https://xievcc.github.io/2019/12/21/linux%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6/</id>
+    <link href="https://blog.neinx.site/2019/12/21/linux%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6/"/>
+    <id>https://blog.neinx.site/2019/12/21/linux%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6/</id>
     <published>2019-12-21T12:15:01.000Z</published>
     <updated>2019-12-21T13:25:14.754Z</updated>
     
@@ -208,19 +208,19 @@
     </summary>
     
     
-      <category term="技术" scheme="https://xievcc.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://blog.neinx.site/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="linux" scheme="https://xievcc.github.io/tags/linux/"/>
+      <category term="linux" scheme="https://blog.neinx.site/tags/linux/"/>
     
-      <category term="软件" scheme="https://xievcc.github.io/tags/%E8%BD%AF%E4%BB%B6/"/>
+      <category term="软件" scheme="https://blog.neinx.site/tags/%E8%BD%AF%E4%BB%B6/"/>
     
   </entry>
   
   <entry>
     <title>linux备份命令</title>
-    <link href="https://xievcc.github.io/2019/12/21/linux%E5%A4%87%E4%BB%BD%E5%91%BD%E4%BB%A4/"/>
-    <id>https://xievcc.github.io/2019/12/21/linux%E5%A4%87%E4%BB%BD%E5%91%BD%E4%BB%A4/</id>
+    <link href="https://blog.neinx.site/2019/12/21/linux%E5%A4%87%E4%BB%BD%E5%91%BD%E4%BB%A4/"/>
+    <id>https://blog.neinx.site/2019/12/21/linux%E5%A4%87%E4%BB%BD%E5%91%BD%E4%BB%A4/</id>
     <published>2019-12-21T09:57:17.000Z</published>
     <updated>2019-12-21T12:11:05.957Z</updated>
     
@@ -236,12 +236,12 @@
     </summary>
     
     
-      <category term="技术" scheme="https://xievcc.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://blog.neinx.site/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="linux" scheme="https://xievcc.github.io/tags/linux/"/>
+      <category term="linux" scheme="https://blog.neinx.site/tags/linux/"/>
     
-      <category term="shell" scheme="https://xievcc.github.io/tags/shell/"/>
+      <category term="shell" scheme="https://blog.neinx.site/tags/shell/"/>
     
   </entry>
   
